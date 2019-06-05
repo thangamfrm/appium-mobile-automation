@@ -14,11 +14,10 @@ mkdir mobile-tools
 cd mobile-tools
 tar xf ~/Downloads/android-studio-ide-183.5452501-linux.tar.gz 
 
-# Update Environment Variable
-~ update ~/.bashrc and source
+# Update Environment Variable. File: ~/.bashrc
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
+source ~/.bashrc
 
 # Start the Android Studio
 cd android-studio/bin
@@ -49,7 +48,6 @@ tar xf ~/Downloads/node-v10.15.3-linux-x64.tar.xz
 mv node-v10.15.3-linux-x64 nodejs
 
 # Update Environment Variales
-# Update Path Environment
 vi ~/.bashrc
 export PATH=$PATH:$HOME/mobile-tools/nodejs/bin
 source ~/.bashrc
